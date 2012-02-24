@@ -1,0 +1,4 @@
+This removes the annoying favicons from the Bookmark Bar in Google Chrome on the Mac.
+
+As of this writing Google Chrome blocks the default distribution of SIMBL.
+To use this app you will need to install Albert Zeyer's fork. (https://github.com/albertz/simbl)
