@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2E26239614F590D000EF319B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E26239514F590D000EF319B /* Cocoa.framework */; };
 		2E2623A014F590D000EF319B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E26239E14F590D000EF319B /* InfoPlist.strings */; };
+		2E2623A914F5914700EF319B /* NoFavicons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2623A814F5914700EF319B /* NoFavicons.m */; };
+		2EBE895714F7452200B5D324 /* BookmarkButtonCell+WithoutImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE895614F7452200B5D324 /* BookmarkButtonCell+WithoutImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,9 +19,14 @@
 		2E26239814F590D000EF319B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2E26239914F590D000EF319B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2E26239A14F590D000EF319B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2E26239D14F590D000EF319B /* NoFavicons-Info.plist */ = {isa = PBXFileReference; path = "NoFavicons-Info.plist"; sourceTree = "<group>"; };
+		2E26239D14F590D000EF319B /* NoFavicons-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NoFavicons-Info.plist"; sourceTree = "<group>"; };
 		2E26239F14F590D000EF319B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2E2623A114F590D000EF319B /* NoFavicons-Prefix.pch */ = {isa = PBXFileReference; path = "NoFavicons-Prefix.pch"; sourceTree = "<group>"; };
+		2E2623A114F590D000EF319B /* NoFavicons-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoFavicons-Prefix.pch"; sourceTree = "<group>"; };
+		2E2623A714F5914700EF319B /* NoFavicons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoFavicons.h; sourceTree = "<group>"; };
+		2E2623A814F5914700EF319B /* NoFavicons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoFavicons.m; sourceTree = "<group>"; };
+		2EBE895514F7452200B5D324 /* BookmarkButtonCell+WithoutImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookmarkButtonCell+WithoutImage.h"; sourceTree = "<group>"; };
+		2EBE895614F7452200B5D324 /* BookmarkButtonCell+WithoutImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BookmarkButtonCell+WithoutImage.m"; sourceTree = "<group>"; };
+		2EBE895814F7459E00B5D324 /* BookmarkButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookmarkButtonCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +44,11 @@
 		2E26238714F590D000EF319B = {
 			isa = PBXGroup;
 			children = (
+				2EBE895814F7459E00B5D324 /* BookmarkButtonCell.h */,
+				2EBE895514F7452200B5D324 /* BookmarkButtonCell+WithoutImage.h */,
+				2EBE895614F7452200B5D324 /* BookmarkButtonCell+WithoutImage.m */,
+				2E2623A714F5914700EF319B /* NoFavicons.h */,
+				2E2623A814F5914700EF319B /* NoFavicons.m */,
 				2E26239B14F590D000EF319B /* NoFavicons */,
 				2E26239414F590D000EF319B /* Frameworks */,
 				2E26239314F590D000EF319B /* Products */,
@@ -149,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E2623A914F5914700EF319B /* NoFavicons.m in Sources */,
+				2EBE895714F7452200B5D324 /* BookmarkButtonCell+WithoutImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,8 +184,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -187,9 +202,14 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					warning,
+					"-flat_namespace",
+				);
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -197,8 +217,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -208,18 +229,22 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					warning,
+					"-flat_namespace",
+				);
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
 		2E2623A514F590D000EF319B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NoFavicons/NoFavicons-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "NoFavicons/NoFavicons-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -228,10 +253,8 @@
 		2E2623A614F590D000EF319B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NoFavicons/NoFavicons-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "NoFavicons/NoFavicons-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -256,6 +279,7 @@
 				2E2623A614F590D000EF319B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

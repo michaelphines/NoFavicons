@@ -25,6 +25,17 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2012 __MyCompanyName__. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string></string>
+	<string>NoFavicons</string>
+	<key>SIMBLTargetApplications</key>
+	<array>
+		<dict>
+			<key>BundleIdentifier</key>
+			<string>com.google.Chrome</string>
+			<key>MaxBundleVersion</key>
+			<string>99999</string>
+			<key>MinBundleVersion</key>
+			<string>1025</string>
+		</dict>
+	</array>
 </dict>
 </plist>
