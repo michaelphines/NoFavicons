@@ -7,5 +7,5 @@ This removes the annoying favicons from the Bookmark Bar in Google Chrome on the
 2. Copy [NoFavicon.bundle](https://github.com/downloads/michaelphines/NoFavicons/NoFavicons.bundle.zip) to ~/Library/Application Support/SIMBL/Plugins
 3. Restart Google Chrome
 
-## Todo
+## To do
 * One-click installer
