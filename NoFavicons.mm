@@ -9,16 +9,7 @@
 {
     NSLog(@"NoFavicons loading");
     [self swizzleBookmarkCellWithoutImage];
-//    [self swizzleBookmarkBarFolderControllerWithArrow];
     NSLog(@"NoFavicons installed");
-}
-
-+ (void) swizzleBookmarkBarFolderControllerWithArrow
-{
-    Class klass = [BookmarkBarFolderController class];
-    SEL oldSelector = @selector(makeButtonForNode:frame:);
-    SEL newSelector = @selector(makeButtonWithArrowForNode:frame:);
-    [self swizzle:oldSelector with: newSelector inClass:klass];
 }
 
 + (void) swizzleBookmarkCellWithoutImage
