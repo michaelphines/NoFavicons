@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E233FC6150AC20600F7B76D /* BookmarkBarFolderController+WithArrow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2E233FC5150AC20600F7B76D /* BookmarkBarFolderController+WithArrow.mm */; };
 		2E26239614F590D000EF319B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E26239514F590D000EF319B /* Cocoa.framework */; };
 		2E2623A014F590D000EF319B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E26239E14F590D000EF319B /* InfoPlist.strings */; };
-		2E2623A914F5914700EF319B /* NoFavicons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2623A814F5914700EF319B /* NoFavicons.m */; };
-		2EBE895714F7452200B5D324 /* BookmarkButtonCell+WithoutImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE895614F7452200B5D324 /* BookmarkButtonCell+WithoutImage.m */; };
+		2E2623A914F5914700EF319B /* NoFavicons.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2E2623A814F5914700EF319B /* NoFavicons.mm */; };
+		2EBE895714F7452200B5D324 /* BookmarkButtonCell+WithoutImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE895614F7452200B5D324 /* BookmarkButtonCell+WithoutImage.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E233FC4150AC20600F7B76D /* BookmarkBarFolderController+WithArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookmarkBarFolderController+WithArrow.h"; sourceTree = "<group>"; };
+		2E233FC5150AC20600F7B76D /* BookmarkBarFolderController+WithArrow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "BookmarkBarFolderController+WithArrow.mm"; sourceTree = "<group>"; };
+		2E233FC7150AC25100F7B76D /* BookmarkBarFolderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkBarFolderController.h; sourceTree = "<group>"; };
+		2E233FC8150AC2B300F7B76D /* BookmarkNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkNode.h; sourceTree = "<group>"; };
+		2E233FC9150AC35800F7B76D /* BookmarkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkButton.h; sourceTree = "<group>"; };
 		2E26239214F590D000EF319B /* NoFavicons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoFavicons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E26239514F590D000EF319B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2E26239814F590D000EF319B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -23,9 +29,9 @@
 		2E26239F14F590D000EF319B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E2623A114F590D000EF319B /* NoFavicons-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoFavicons-Prefix.pch"; sourceTree = "<group>"; };
 		2E2623A714F5914700EF319B /* NoFavicons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoFavicons.h; sourceTree = "<group>"; };
-		2E2623A814F5914700EF319B /* NoFavicons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoFavicons.m; sourceTree = "<group>"; };
+		2E2623A814F5914700EF319B /* NoFavicons.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NoFavicons.mm; sourceTree = "<group>"; };
 		2EBE895514F7452200B5D324 /* BookmarkButtonCell+WithoutImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookmarkButtonCell+WithoutImage.h"; sourceTree = "<group>"; };
-		2EBE895614F7452200B5D324 /* BookmarkButtonCell+WithoutImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BookmarkButtonCell+WithoutImage.m"; sourceTree = "<group>"; };
+		2EBE895614F7452200B5D324 /* BookmarkButtonCell+WithoutImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "BookmarkButtonCell+WithoutImage.mm"; sourceTree = "<group>"; };
 		2EBE895814F7459E00B5D324 /* BookmarkButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookmarkButtonCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,11 +50,16 @@
 		2E26238714F590D000EF319B = {
 			isa = PBXGroup;
 			children = (
+				2E233FC9150AC35800F7B76D /* BookmarkButton.h */,
+				2E233FC8150AC2B300F7B76D /* BookmarkNode.h */,
 				2EBE895814F7459E00B5D324 /* BookmarkButtonCell.h */,
+				2E233FC7150AC25100F7B76D /* BookmarkBarFolderController.h */,
+				2E233FC4150AC20600F7B76D /* BookmarkBarFolderController+WithArrow.h */,
+				2E233FC5150AC20600F7B76D /* BookmarkBarFolderController+WithArrow.mm */,
 				2EBE895514F7452200B5D324 /* BookmarkButtonCell+WithoutImage.h */,
-				2EBE895614F7452200B5D324 /* BookmarkButtonCell+WithoutImage.m */,
+				2EBE895614F7452200B5D324 /* BookmarkButtonCell+WithoutImage.mm */,
 				2E2623A714F5914700EF319B /* NoFavicons.h */,
-				2E2623A814F5914700EF319B /* NoFavicons.m */,
+				2E2623A814F5914700EF319B /* NoFavicons.mm */,
 				2E26239B14F590D000EF319B /* NoFavicons */,
 				2E26239414F590D000EF319B /* Frameworks */,
 				2E26239314F590D000EF319B /* Products */,
@@ -161,8 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E2623A914F5914700EF319B /* NoFavicons.m in Sources */,
-				2EBE895714F7452200B5D324 /* BookmarkButtonCell+WithoutImage.m in Sources */,
+				2E2623A914F5914700EF319B /* NoFavicons.mm in Sources */,
+				2EBE895714F7452200B5D324 /* BookmarkButtonCell+WithoutImage.mm in Sources */,
+				2E233FC6150AC20600F7B76D /* BookmarkBarFolderController+WithArrow.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

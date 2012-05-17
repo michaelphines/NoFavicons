@@ -2,5 +2,8 @@
 
 @interface NoFavicons : NSObject
 + (void) load;
-+ (void) swizzleBookmarkCellClassWithoutImage;
++ (void) swizzle:(SEL)oldSelector with:(SEL)newSelector inClass:(Class)klass;
++ (void) swizzleBookmarkBarFolderControllerWithArrow;
++ (void) swizzleBookmarkCellWithoutImage;
 @end
+

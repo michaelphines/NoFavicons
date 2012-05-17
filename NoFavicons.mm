@@ -1,5 +1,6 @@
 #import "NoFavicons.h"
 #import "BookmarkButtonCell.h"
+#import "BookmarkBarFolderController.h"
 #import <objc/objc-class.h>
 
 @implementation NoFavicons
@@ -7,15 +8,29 @@
 + (void) load
 {
     NSLog(@"NoFavicons loading");
-    [self swizzleBookmarkCellClassWithoutImage];
+    [self swizzleBookmarkCellWithoutImage];
+//    [self swizzleBookmarkBarFolderControllerWithArrow];
     NSLog(@"NoFavicons installed");
 }
 
-+ (void) swizzleBookmarkCellClassWithoutImage
++ (void) swizzleBookmarkBarFolderControllerWithArrow
+{
+    Class klass = [BookmarkBarFolderController class];
+    SEL oldSelector = @selector(makeButtonForNode:frame:);
+    SEL newSelector = @selector(makeButtonWithArrowForNode:frame:);
+    [self swizzle:oldSelector with: newSelector inClass:klass];
+}
+
++ (void) swizzleBookmarkCellWithoutImage
 {
     Class klass = [BookmarkButtonCell class];
     SEL oldSelector = @selector(setBookmarkCellText:image:);
     SEL newSelector = @selector(setBookmarkCellText:withoutImage:);
+    [self swizzle:oldSelector with: newSelector inClass:klass];
+}
+
++ (void) swizzle:(SEL)oldSelector with:(SEL)newSelector inClass:(Class)klass 
+{
     Method oldMethod = class_getInstanceMethod(klass, oldSelector);
     Method newMethod = class_getInstanceMethod(klass, newSelector);
     
