@@ -36,6 +36,14 @@
 			<key>MinBundleVersion</key>
 			<string>900</string>
 		</dict>
+		<dict>
+			<key>BundleIdentifier</key>
+			<string>com.google.Chrome.canary</string>
+			<key>MaxBundleVersion</key>
+			<string>99999</string>
+			<key>MinBundleVersion</key>
+			<string>900</string>
+		</dict>
 	</array>
 </dict>
 </plist>
