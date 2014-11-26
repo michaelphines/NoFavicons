@@ -6,7 +6,7 @@
 
 @implementation BookmarkButtonCell (WithoutImage)
 
-NSString* const FolderImageHash = @"4cc0afe6dc8a0cee961f15b087f6cc13784f6bad";
+NSString* const FolderImageHash = @"c3706d5b34a4b336f1a08b2819a01698c94c92ff";
 
 - (void) setBookmarkCellText: (NSString*)title withoutImage:(NSImage*)image
 {
