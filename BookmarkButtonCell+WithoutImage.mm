@@ -4,7 +4,7 @@
 #import "BookmarkButtonCell.h"
 #import "BookmarkButtonCell+WithoutImage.h"
 
-@implementation BookmarkButtonCell (WithoutImage)
+@implementation NSObject (BookmarkButtonCellWithoutImage)
 
 NSString* const FolderImageHash = @"4cc0afe6dc8a0cee961f15b087f6cc13784f6bad";
 
@@ -16,8 +16,8 @@ NSString* const FolderImageHash = @"4cc0afe6dc8a0cee961f15b087f6cc13784f6bad";
   }
   [self setBookmarkCellText: title withoutImage:image];
   
-  if (![self isFolderButtonCell])
-    [self setImagePosition:NSNoImage];
+  if (![self performSelector:@selector(isFolderButtonCell)])
+    [self performSelector:@selector(setImagePosition:) withObject:(id)NSNoImage];
 }
 
 - (BOOL) imageIsFolder: (NSImage*)image
