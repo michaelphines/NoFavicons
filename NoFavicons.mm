@@ -1,6 +1,7 @@
 #import "NoFavicons.h"
 #import "BookmarkButtonCell.h"
 #import "BookmarkBarFolderController.h"
+#import "BookmarkButtonCell+WithoutImage.h"
 #import <objc/objc-class.h>
 
 @implementation NoFavicons
@@ -14,7 +15,7 @@
 
 + (void) swizzleBookmarkCellWithoutImage
 {
-    Class klass = [BookmarkButtonCell class];
+    Class klass = NSClassFromString(@"BookmarkButtonCell");
     SEL oldSelector = @selector(setBookmarkCellText:image:);
     SEL newSelector = @selector(setBookmarkCellText:withoutImage:);
     [self swizzle:oldSelector with: newSelector inClass:klass];
