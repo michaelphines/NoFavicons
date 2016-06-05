@@ -6,7 +6,7 @@
 
 - Designed for OS X 10.9+ 
 - Designed for Google Chrome and Google Chrome Canary 50+ 
-- SIMBL plugin to This remove the favicons from the Bookmark Bar in Google Chrome on OS X
+- SIMBL plugin to remove the favicons from the Bookmark Bar in Google Chrome on OS X
 - Author: [w0lfschild](https://github.com/w0lfschild)
 
 # Note:
