@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>org.michaelphines.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.3</string>
+	<string>1.4.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2012 Michael Hines. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
@@ -31,18 +31,10 @@
 		<dict>
 			<key>BundleIdentifier</key>
 			<string>com.google.Chrome</string>
-			<key>MaxBundleVersion</key>
-			<string>99999</string>
-			<key>MinBundleVersion</key>
-			<string>900</string>
 		</dict>
 		<dict>
 			<key>BundleIdentifier</key>
 			<string>com.google.Chrome.canary</string>
-			<key>MaxBundleVersion</key>
-			<string>99999</string>
-			<key>MinBundleVersion</key>
-			<string>900</string>
 		</dict>
 	</array>
 </dict>
