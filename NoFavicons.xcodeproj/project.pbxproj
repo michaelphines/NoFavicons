@@ -7,29 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E26239614F590D000EF319B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E26239514F590D000EF319B /* Cocoa.framework */; };
-		2E2623A014F590D000EF319B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E26239E14F590D000EF319B /* InfoPlist.strings */; };
-		2E2623A914F5914700EF319B /* NoFavicons.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2E2623A814F5914700EF319B /* NoFavicons.mm */; };
-		2EBE895714F7452200B5D324 /* BookmarkButtonCell+WithoutImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE895614F7452200B5D324 /* BookmarkButtonCell+WithoutImage.mm */; };
+		2E2623A914F5914700EF319B /* NoFavicons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2623A814F5914700EF319B /* NoFavicons.m */; };
+		FB20D35B1D03C280008CF4BA /* ZKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20D35A1D03C280008CF4BA /* ZKSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E233FC7150AC25100F7B76D /* BookmarkBarFolderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkBarFolderController.h; sourceTree = "<group>"; };
-		2E233FC8150AC2B300F7B76D /* BookmarkNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkNode.h; sourceTree = "<group>"; };
-		2E233FC9150AC35800F7B76D /* BookmarkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkButton.h; sourceTree = "<group>"; };
 		2E26239214F590D000EF319B /* NoFavicons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoFavicons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E26239514F590D000EF319B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		2E26239814F590D000EF319B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		2E26239914F590D000EF319B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		2E26239A14F590D000EF319B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2E26239D14F590D000EF319B /* NoFavicons-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NoFavicons-Info.plist"; sourceTree = "<group>"; };
-		2E26239F14F590D000EF319B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2E2623A114F590D000EF319B /* NoFavicons-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoFavicons-Prefix.pch"; sourceTree = "<group>"; };
-		2E2623A714F5914700EF319B /* NoFavicons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoFavicons.h; sourceTree = "<group>"; };
-		2E2623A814F5914700EF319B /* NoFavicons.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NoFavicons.mm; sourceTree = "<group>"; };
-		2EBE895514F7452200B5D324 /* BookmarkButtonCell+WithoutImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookmarkButtonCell+WithoutImage.h"; sourceTree = "<group>"; };
-		2EBE895614F7452200B5D324 /* BookmarkButtonCell+WithoutImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "BookmarkButtonCell+WithoutImage.mm"; sourceTree = "<group>"; };
-		2EBE895814F7459E00B5D324 /* BookmarkButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookmarkButtonCell.h; sourceTree = "<group>"; };
+		2E2623A814F5914700EF319B /* NoFavicons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoFavicons.m; path = NoFavicons/NoFavicons.m; sourceTree = "<group>"; };
+		FB20D3591D03C280008CF4BA /* ZKSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZKSwizzle.h; path = NoFavicons/ZKSwizzle.h; sourceTree = "<group>"; };
+		FB20D35A1D03C280008CF4BA /* ZKSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZKSwizzle.m; path = NoFavicons/ZKSwizzle.m; sourceTree = "<group>"; };
+		FB45D88D1D04A5C7009536AD /* NoFavicons-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "NoFavicons-Info.plist"; path = "NoFavicons/NoFavicons-Info.plist"; sourceTree = "<group>"; };
+		FBD4F7AE1D0488F6001C318A /* BookmarkButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookmarkButtonCell.h; path = NoFavicons/BookmarkButtonCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +25,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E26239614F590D000EF319B /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,16 +34,10 @@
 		2E26238714F590D000EF319B = {
 			isa = PBXGroup;
 			children = (
-				2E233FC9150AC35800F7B76D /* BookmarkButton.h */,
-				2E233FC8150AC2B300F7B76D /* BookmarkNode.h */,
-				2EBE895814F7459E00B5D324 /* BookmarkButtonCell.h */,
-				2E233FC7150AC25100F7B76D /* BookmarkBarFolderController.h */,
-				2EBE895514F7452200B5D324 /* BookmarkButtonCell+WithoutImage.h */,
-				2EBE895614F7452200B5D324 /* BookmarkButtonCell+WithoutImage.mm */,
-				2E2623A714F5914700EF319B /* NoFavicons.h */,
-				2E2623A814F5914700EF319B /* NoFavicons.mm */,
-				2E26239B14F590D000EF319B /* NoFavicons */,
-				2E26239414F590D000EF319B /* Frameworks */,
+				FBD4F7AF1D049DEB001C318A /* ZKSwizzle */,
+				FBD4F7B01D049DF6001C318A /* Headers */,
+				2E2623A814F5914700EF319B /* NoFavicons.m */,
+				FB45D88D1D04A5C7009536AD /* NoFavicons-Info.plist */,
 				2E26239314F590D000EF319B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,41 +50,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2E26239414F590D000EF319B /* Frameworks */ = {
+		FBD4F7AF1D049DEB001C318A /* ZKSwizzle */ = {
 			isa = PBXGroup;
 			children = (
-				2E26239514F590D000EF319B /* Cocoa.framework */,
-				2E26239714F590D000EF319B /* Other Frameworks */,
+				FB20D3591D03C280008CF4BA /* ZKSwizzle.h */,
+				FB20D35A1D03C280008CF4BA /* ZKSwizzle.m */,
 			);
-			name = Frameworks;
+			name = ZKSwizzle;
 			sourceTree = "<group>";
 		};
-		2E26239714F590D000EF319B /* Other Frameworks */ = {
+		FBD4F7B01D049DF6001C318A /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				2E26239814F590D000EF319B /* AppKit.framework */,
-				2E26239914F590D000EF319B /* CoreData.framework */,
-				2E26239A14F590D000EF319B /* Foundation.framework */,
+				FBD4F7AE1D0488F6001C318A /* BookmarkButtonCell.h */,
 			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		2E26239B14F590D000EF319B /* NoFavicons */ = {
-			isa = PBXGroup;
-			children = (
-				2E26239C14F590D000EF319B /* Supporting Files */,
-			);
-			path = NoFavicons;
-			sourceTree = "<group>";
-		};
-		2E26239C14F590D000EF319B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2E26239D14F590D000EF319B /* NoFavicons-Info.plist */,
-				2E26239E14F590D000EF319B /* InfoPlist.strings */,
-				2E2623A114F590D000EF319B /* NoFavicons-Prefix.pch */,
-			);
-			name = "Supporting Files";
+			name = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +93,7 @@
 		2E26238914F590D000EF319B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0810;
 			};
 			buildConfigurationList = 2E26238C14F590D000EF319B /* Build configuration list for PBXProject "NoFavicons" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -156,7 +117,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E2623A014F590D000EF319B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,23 +127,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E2623A914F5914700EF319B /* NoFavicons.mm in Sources */,
-				2EBE895714F7452200B5D324 /* BookmarkButtonCell+WithoutImage.mm in Sources */,
+				FB20D35B1D03C280008CF4BA /* ZKSwizzle.m in Sources */,
+				2E2623A914F5914700EF319B /* NoFavicons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2E26239E14F590D000EF319B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E26239F14F590D000EF319B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2E2623A214F590D000EF319B /* Debug */ = {
@@ -195,15 +144,19 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -217,7 +170,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-undefined",
@@ -237,8 +190,10 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
@@ -246,6 +201,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -253,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-undefined",
@@ -267,10 +223,16 @@
 		2E2623A514F590D000EF319B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INFOPLIST_FILE = "NoFavicons/NoFavicons-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				INFOPLIST_FILE = "$(SRCROOT)/NoFavicons/NoFavicons-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.w0lf.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -280,10 +242,16 @@
 		2E2623A614F590D000EF319B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INFOPLIST_FILE = "NoFavicons/NoFavicons-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				INFOPLIST_FILE = "$(SRCROOT)/NoFavicons/NoFavicons-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.w0lf.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
