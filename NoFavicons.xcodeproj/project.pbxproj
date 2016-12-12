@@ -9,16 +9,15 @@
 /* Begin PBXBuildFile section */
 		2E2623A914F5914700EF319B /* NoFavicons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2623A814F5914700EF319B /* NoFavicons.m */; };
 		FB20D35B1D03C280008CF4BA /* ZKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20D35A1D03C280008CF4BA /* ZKSwizzle.m */; };
-		FB45D88E1D04A5C7009536AD /* NoFavicons-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB45D88D1D04A5C7009536AD /* NoFavicons-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E26239214F590D000EF319B /* NoFavicons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoFavicons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E2623A814F5914700EF319B /* NoFavicons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoFavicons.m; sourceTree = "<group>"; };
-		FB20D3591D03C280008CF4BA /* ZKSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKSwizzle.h; sourceTree = "<group>"; };
-		FB20D35A1D03C280008CF4BA /* ZKSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKSwizzle.m; sourceTree = "<group>"; };
-		FB45D88D1D04A5C7009536AD /* NoFavicons-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NoFavicons-Info.plist"; sourceTree = "<group>"; };
-		FBD4F7AE1D0488F6001C318A /* BookmarkButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkButtonCell.h; sourceTree = "<group>"; };
+		2E2623A814F5914700EF319B /* NoFavicons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoFavicons.m; path = NoFavicons/NoFavicons.m; sourceTree = "<group>"; };
+		FB20D3591D03C280008CF4BA /* ZKSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZKSwizzle.h; path = NoFavicons/ZKSwizzle.h; sourceTree = "<group>"; };
+		FB20D35A1D03C280008CF4BA /* ZKSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZKSwizzle.m; path = NoFavicons/ZKSwizzle.m; sourceTree = "<group>"; };
+		FB45D88D1D04A5C7009536AD /* NoFavicons-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "NoFavicons-Info.plist"; path = "NoFavicons/NoFavicons-Info.plist"; sourceTree = "<group>"; };
+		FBD4F7AE1D0488F6001C318A /* BookmarkButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookmarkButtonCell.h; path = NoFavicons/BookmarkButtonCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +35,7 @@
 			isa = PBXGroup;
 			children = (
 				FBD4F7AF1D049DEB001C318A /* ZKSwizzle */,
-				FBD4F7B01D049DF6001C318A /* Chrome */,
+				FBD4F7B01D049DF6001C318A /* Headers */,
 				2E2623A814F5914700EF319B /* NoFavicons.m */,
 				FB45D88D1D04A5C7009536AD /* NoFavicons-Info.plist */,
 				2E26239314F590D000EF319B /* Products */,
@@ -60,12 +59,12 @@
 			name = ZKSwizzle;
 			sourceTree = "<group>";
 		};
-		FBD4F7B01D049DF6001C318A /* Chrome */ = {
+		FBD4F7B01D049DF6001C318A /* Headers */ = {
 			isa = PBXGroup;
 			children = (
 				FBD4F7AE1D0488F6001C318A /* BookmarkButtonCell.h */,
 			);
-			name = Chrome;
+			name = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,7 +93,7 @@
 		2E26238914F590D000EF319B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 			};
 			buildConfigurationList = 2E26238C14F590D000EF319B /* Build configuration list for PBXProject "NoFavicons" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -118,7 +117,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB45D88E1D04A5C7009536AD /* NoFavicons-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,8 +144,10 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -190,8 +190,10 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
@@ -223,10 +225,14 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INFOPLIST_FILE = "NoFavicons-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/NoFavicons/NoFavicons-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.michaelphines.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.w0lf.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
@@ -238,10 +244,14 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INFOPLIST_FILE = "NoFavicons-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/NoFavicons/NoFavicons-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.michaelphines.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.w0lf.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;

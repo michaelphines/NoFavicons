@@ -2,16 +2,31 @@
 #import "ZKSwizzle.h"
 #import <CommonCrypto/CommonDigest.h>
 
+@import AppKit;
+
 @interface NoFavicons : NSObject
 @end
 
+NoFavicons *plugin;
+
 @implementation NoFavicons 
+
++ (NoFavicons*) sharedInstance
+{
+    static NoFavicons * plugin = nil;
+    
+    if (plugin == nil)
+        plugin = [[NoFavicons alloc] init];
+    
+    return plugin;
+}
 
 + (void) load
 {
     NSLog(@"NoFavicons loading...");
+    plugin = [NoFavicons sharedInstance];
     ZKSwizzle(wb_BookmarkButtonCell, BookmarkButtonCell);
-    NSLog(@"NoFavicons installed");
+    NSLog(@"%@ loaded into %@ on macOS 10.%ld", [self class], [[NSBundle mainBundle] bundleIdentifier], [[NSProcessInfo processInfo] operatingSystemVersion].minorVersion);
 }
 
 @end
@@ -28,6 +43,9 @@ static NSArray *Folderhashes = nil;
     // Remove Image
     if ([[self title] isEqualToString:@""])
         return ZKOrig(struct CGRect, arg1);
+    
+    [self setTitle:[self title]];
+    
     return CGRectZero;
 }
 
@@ -38,7 +56,7 @@ static NSArray *Folderhashes = nil;
 }
 
 - (void)setBookmarkCellText:(id)arg1 image:(id)arg2
-{
+{    
     if ([self imageIsFolder:arg2])
         if (![(BookmarkButtonCell*)self isFolderButtonCell])
             arg1 = [NSString stringWithFormat:@"%@ ▾", arg1];

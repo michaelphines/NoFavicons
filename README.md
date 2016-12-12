@@ -9,7 +9,7 @@
 - SIMBL plugin to remove the favicons from the Bookmark Bar in Google Chrome on OS X
 - Author: [w0lfschild](https://github.com/w0lfschild)
 
-# Note:
+# Notes:
 
 - It might take a moment for labels to size properly
 
